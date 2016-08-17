@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #E3E3E3;
+}
+h1{
+  margin: 20px 500px;
+}
+form{
+/*   background: gray; */
+  width: 1000px;
+  margin:10px auto;
+  padding: 5px 50px;
+}
+p{
+  margin: 10px;
+  font-size: 20px;
+}
+input{
+  width: 230px;
+  height: 30px;
+  padding: 2px 7px;
+  font-size: 16px;
+}
+.sub{
+  margin-left: 8px;
+  width: 248px;
+  height: 40px;
+  font-size: 20px;
+  background: #C9C9C9;
+}
+
+
+
+
+</style>
+<body>
+<h1>Enter Data</h1>
+<form action="http://127.0.0.1:3000/action" method="POST">
+	
+	<p>Enter Id <br></p>
+	<p><input type="number" name="id" placeholder="Id"></p>
+
+	<p>Enter Title <br></p>
+	<p><input type="text" name="title" placeholder="Title"></p>
+
+	<p>Enter description <br></p>
+	<p><input type="text" name="desc" placeholder="description"></p>
+
+	<p>Image Path <br></p>
+	<p><input type="text" name="imgpath" placeholder="image"></p>
+
+	<p>Enter Qusetion <br></p>
+	<p><input type="text" name="ques" placeholder="Question"></p>
+
+	<p>Enter Answer1 <br></p>
+	<p><input type="text" name="ans1" placeholder="answer one">
+		<input type="number" name="score1" placeholder="score one">
+			<input type="text" name="message_one" placeholder="Message one"></p>
+
+	<p>Enter answer2 <br></p>
+	<p><input type="text" name="ans2" placeholder="answer two">
+		<input type="number" name="score2" placeholder="score two">
+			<input type="text" name="message_two" placeholder="Message two"></p>
+
+	<p>Enter answer3 <br></p>
+	<p><input type="text" name="ans3" placeholder="answer three">
+		<input type="number" name="score3" placeholder="score three">
+			<input type="text" name="message_three" placeholder="Message Three"></p>
+
+	<p>Enter answer4 <br></p>
+	<p><input type="text" name="ans4" placeholder="answer four">
+		<input type="number" name="score4" placeholder="score four">
+			<input type="text" name="message_four" placeholder="Message four"></p>
+
+	<p>Views<br></p>
+	<p><input type="number" name="views" placeholder="Views"></p>
+
+	<p>Shares <br></p>
+	<p><input type="number" name="shares" placeholder="Shares"></p>
+
+	<p>Total Views<br></p>
+	<p><input type="number" name="view_total" placeholder="Total Views"></p>
+
+	<p>Total Shares <br></p>
+	<p><input type="number" name="share_total" placeholder="Toatl Shares"></p>
+
+    <input class="sub" type="submit">
+
+</form>
+	
+</body>
+</html>
