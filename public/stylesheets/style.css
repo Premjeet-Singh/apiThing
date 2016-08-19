@@ -1,8 +1,36 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #E3E3E3;
+}
+h1{
+  margin: 20px 500px;
+}
+form{
+/*   background: gray; */
+  width: 1000px;
+  margin:10px auto;
+  padding: 5px 50px;
+}
+p{
+  margin: 10px;
+  font-size: 20px;
+}
+input{
+  width: 230px;
+  height: 30px;
+  padding: 2px 7px;
+  font-size: 16px;
+}
+.sub{
+  margin-left: 8px;
+  width: 248px;
+  height: 40px;
+  font-size: 20px;
+  background: #C9C9C9;
 }
 
-a {
-  color: #00B7FF;
-}
+

@@ -8,9 +8,10 @@ var data = '';
 var pathname = '';
 var sqlite3 = require('sqlite3').verbose();
 var db = new sqlite3.Database('fbapp.db');
+var cors = require('cors');
 
 app.use(bodyParser.urlencoded({ extended: true })); 
-
+app.use(cors());
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });

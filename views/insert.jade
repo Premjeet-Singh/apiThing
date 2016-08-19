@@ -1,0 +1,80 @@
+
+extends layout
+
+block content
+    h1 Enter Data
+    form(action='http://127.0.0.1:3000/action', method='POST')
+      p
+        | Enter Id 
+        br
+      p
+        input(type='number', name='id', placeholder='Id')
+      p
+        | Enter Title 
+        br
+      p
+        input(type='text', name='title', placeholder='Title')
+      p
+        | Enter description 
+        br
+      p
+        input(type='text', name='desc', placeholder='description')
+      p
+        | Image Path 
+        br
+      p
+        input(type='text', name='imgpath', placeholder='image')
+      p
+        | Enter Qusetion 
+        br
+      p
+        input(type='text', name='ques', placeholder='Question')
+      p
+        | Enter Answer1 
+        br
+      p
+        input(type='text', name='ans1', placeholder='answer one')
+        input(type='number', name='score1', placeholder='score one')
+        input(type='text', name='message_one', placeholder='Message one')
+      p
+        | Enter answer2 
+        br
+      p
+        input(type='text', name='ans2', placeholder='answer two')
+        input(type='number', name='score2', placeholder='score two')
+        input(type='text', name='message_two', placeholder='Message two')
+      p
+        | Enter answer3 
+        br
+      p
+        input(type='text', name='ans3', placeholder='answer three')
+        input(type='number', name='score3', placeholder='score three')
+        input(type='text', name='message_three', placeholder='Message Three')
+      p
+        | Enter answer4 
+        br
+      p
+        input(type='text', name='ans4', placeholder='answer four')
+        input(type='number', name='score4', placeholder='score four')
+        input(type='text', name='message_four', placeholder='Message four')
+      p
+        | Views
+        br
+      p
+        input(type='number', name='views', placeholder='Views')
+      p
+        | Shares 
+        br
+      p
+        input(type='number', name='shares', placeholder='Shares')
+      p
+        | Total Views
+        br
+      p
+        input(type='number', name='view_total', placeholder='Total Views')
+      p
+        | Total Shares 
+        br
+      p
+        input(type='number', name='share_total', placeholder='Toatl Shares')
+      input.sub(type='submit')

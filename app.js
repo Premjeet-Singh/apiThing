@@ -4,9 +4,10 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
 var routes = require('./routes/index');
+var cors = require('cors');
 
+ 
 
 var app = express();
 
@@ -56,5 +57,5 @@ app.use(function(err, req, res, next) {
   });
 });
 
-
+app.use(cors());
 module.exports = app;
